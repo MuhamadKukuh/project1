@@ -26,9 +26,9 @@
                   <?php echo $_SESSION['nama']; ?>
                   </a>
                   <ul class="dropdown-menu text-white" aria-labelledby="navbarDropdown">
-                    <li ><a class="dropdown-item" href="profile.php" calss="text-white">Profile</a></li>
+                    <li ><a class="dropdown-item" href="../tampilan/profile.php" calss="text-white">Profile</a></li>
                     <li><hr class="dropdown-divider"></li>
-                    <li><a href="tabungan.php" class="dropdown-item" calss="text-white">Home </a></li>
+                    <li><a href="../tampilan/home.php" class="dropdown-item" calss="text-white">Home </a></li>
                     <li><hr class="dropdown-divider"></li>
                     <li>
                       <a href="../controller/logout.php" class="dropdown-item" calss="text-white">Logout</a>
@@ -36,7 +36,7 @@
                   </ul>
                 </li>
            <?php }else{ ?>
-              <a href="../register/register.php">Register</a>
+              <a href="../register/register.php" class="text-decoration-none text-white">Register</a>
            <?php } ?>
            </ul>
         </div>

@@ -1,4 +1,9 @@
-<?php session_start();?>
+<?php session_start();
+	if (isset($_SESSION["Login"])) {
+		header("Location: ../tampilan/home.php");
+	}
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -41,7 +46,7 @@
            		    	<input type="password" name="password" class="input" required>
             	   </div>
             	</div>
-            	<a href="edit.php" style="text-decoration: none; color: white; ">Forgot Password?</a>
+            	<a href="changepw.php" style="text-decoration: none; color: white; ">Forgot Password?</a>
             	<button type="submit" class="btn btn-outline-light">login</button>
             </form>
         </div>
